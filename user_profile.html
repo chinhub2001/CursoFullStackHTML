@@ -10,21 +10,21 @@
 			<tr>
 				<td>
 					<p>Nombre</p>
-					<input  type="text">
+					<input type="text" required autofocus>
 				</td>
 				<td>
 					<p>Apellidos</p>
-					<input type="text">
+					<input type="text" required>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<p>Teléfono</p>
-					<input  type="tel">
+					<input  type="tel" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
 				</td>
 				<td>
 					<p>Email</p>
-					<input type="email">
+					<input type="email" placeholder="ejemplo@usuario.es" required>
 				</td>
 			</tr>
 			<tr>
@@ -44,7 +44,7 @@
 				</td>
 				<td>
 					<p>Web favorita</p>
-					<input type="url">
+					<input type="url" placeholder="http://...">
 				</td>
 			</tr>			
 		</table>
