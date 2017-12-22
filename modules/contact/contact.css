@@ -1,0 +1,47 @@
+.body{
+	background: white;
+	
+	height: 600px;
+}
+
+.contact{
+	margin: 2%;
+    height: 100%;
+
+}
+
+.contact_image{
+    height: 60%;
+}
+
+.contact_image img{
+	width: 100%;
+    height: 100%;
+}
+
+.contact_text{
+	height: 40%;
+	padding-top:20px;
+}
+
+.blog_type{
+
+    color: yellow;
+    text-align: left;
+}
+
+.blog_date{
+	color: grey;
+	text-align: left;
+}
+
+.blog_title{
+    display: block;
+    font-size: 2em;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.article{
+	text-align: left;
+}
