@@ -1,0 +1,21 @@
+/**
+ * Style properties, just to view the blocks.
+ */
+.profileform--center{
+	display: flex;
+	background-color: #fafafa;
+	border: 1px solid #999;
+	width: 800px;
+	margin: 40px auto;	
+	position: relative;
+	justify-content: center;
+}
+
+.profileform-column{	
+	margin: 10px 10px
+}
+
+.profileform--item{
+	width: 300px;
+
+}
