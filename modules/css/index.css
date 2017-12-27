@@ -71,4 +71,29 @@
 
 .main-content_section_text{
 	padding-top: 1%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+
+.main-content_section_text_type{
+ 	color: yellow;
+    text-align: left;
+    padding-bottom: 1%;
+}
+
+.main-content_section_text_date{
+	color: grey;
+	text-align: left;
+}
+
+.main-content_section_text_title{
+	display: block;
+    font-size: 1.5em;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.main-content_section_article{
+	text-align: left;
+	margin-right: 6%;
 }
