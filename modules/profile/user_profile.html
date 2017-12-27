@@ -5,66 +5,72 @@
 	<link rel="stylesheet" href="./css/user_profile.css">
 </head>
 <body>
-<header>
-	<div>
-		<img width="100px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
-	</div>
-</header>
-<nav>
-	<div>
-		<a href="./../index.html">INICIO</a>
-	</div>
-	<div>
-		<a href="./../profile/user_profile.html">PERFIL</a>
-	</div>
-	<div>
-		<a href="./../blog/blog.html"> BLOG</a>
-	</div>
-</nav>
-<body>
-	<h1>Mi perfil</h1>
-	<form>
-		<div class="profileform--center">
-			<div class="profileform--column">
-				
-				<p>Nombre</p>
-				<input type="text" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
-			
-				<p>Teléfono</p>
-				<input  type="tel" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
-			
-				<p>Fecha de nacimiento</p>
-				<input  type="date" max="2018-01-01" min="1900-01-01">
-				
-				<p>Color favorito</p>
-				<input  type="color">	
-			
-				<br><br>
-				<input type="submit" class="positivebutton" value="Save"/><input type="reset" class="negativebutton" value="Cancel"/>
-			</div>	
-			<div class="profileform--column">	
-							
-				<p>Apellidos</p>
-				<input type="text" minlength="10" maxlength="150" required inputmode="latin-name">
 
-				<p>Email</p>
-				<input type="email" placeholder="ejemplo@usuario.es" required>
-			
-				<p>Altura</p>
-				<input type="number" min="1" max="3">
-			
-				<p>Web favorita</p>
-				<input type="url" placeholder="http://...">
+	<div class="profileform">
+	</nav>
+			<div class="profileform--header">
+				<header class="profileform--header--icon">
+					<div>
+						<img width="100px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
+					</div>
+				</header>
 				
-			</div>
-		</div>	
-	</form>
-	
-	<br><br>
-	<hr>
-	<footer>
-		<a href="#">Inicio</a> |
-		<a href="#">Ayuda</a> |
-		<a href="#">Contacto</a> 
-	</footer>
+					<div class="profileform--header--index">
+						<a href="./../index.html">INICIO</a>
+					</div>
+					<div class="profileform--header--profile">
+						<a href="./../profile/user_profile.html">PERFIL</a>
+					</div>
+					<div class="profileform--header--blog">
+						<a href="./../blog/blog.html"> BLOG</a>
+					</div>
+				
+			</div>	
+		</nav>
+		<h1>Mi perfil</h1>
+		<form>
+			<div class="profileform--center">
+				<div class="profileform--column">
+					
+					<p>Nombre</p>
+					<input type="text" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
+				
+					<p>Teléfono</p>
+					<input  type="tel" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
+				
+					<p>Fecha de nacimiento</p>
+					<input  type="date" max="2018-01-01" min="1900-01-01">
+					
+					<p>Color favorito</p>
+					<input  type="color">	
+				
+					<br><br>
+					<input type="submit" class="positivebutton" value="Save"/><input type="reset" class="negativebutton" value="Cancel"/>
+				</div>	
+				<div class="profileform--column">	
+								
+					<p>Apellidos</p>
+					<input type="text" minlength="10" maxlength="150" required inputmode="latin-name">
+
+					<p>Email</p>
+					<input type="email" placeholder="ejemplo@usuario.es" required>
+				
+					<p>Altura</p>
+					<input type="number" min="1" max="3">
+				
+					<p>Web favorita</p>
+					<input type="url" placeholder="http://...">
+					
+				</div>
+			</div>	
+		</form>
+		
+		<br><br>
+		<hr>
+		<footer class="profileform--footer">
+			<a href="#">Inicio</a> |
+			<a href="#">Ayuda</a> |
+			<a href="#">Contacto</a> 
+		</footer>
+	</div>
 </body>

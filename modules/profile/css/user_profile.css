@@ -1,6 +1,8 @@
-/**
- * Style properties, just to view the blocks.
- */
+.profileform{
+	display: flex;
+	flex-direction: column;
+	margin: auto 100px
+}
 .profileform--center{
 	display: flex;
 	background-color: #fafafa;
@@ -13,4 +15,23 @@
 
 .profileform--column{	
 	margin: 10px 10px
+}
+
+.profileform--header{
+	display: grid;
+	width: 300px;
+	grid-template-areas: "logo logo logo"
+                       "index profile blog";
+}
+.profileform--header--icon{
+	grid-area: logo;
+}
+.profileform--header--index{
+	grid-area: index;
+}
+.profileform--header--profile{
+	grid-area: profile;
+}
+.profileform--header--blog{
+	grid-area: blog;
 }
