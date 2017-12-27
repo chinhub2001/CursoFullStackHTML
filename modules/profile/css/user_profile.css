@@ -1,20 +1,30 @@
+body{
+	background-color: #fafafa;
+}
 .profileform{
 	display: flex;
 	flex-direction: column;
-	margin: auto 100px
+	margin: auto 100px;
 }
-.profileform--center{
+.profileform--content{
 	display: flex;
-	background-color: #fafafa;
 	border: 1px solid #999;
-	width: 800px;
-	margin: 40px auto;	
-	position: relative;
+	width: 1000px;
+	background-color: #ffffff;
+	margin: 40px auto;
 	justify-content: center;
 }
+.profileform--content--column{
+	margin: 10px 10px;
+	width: 250px;
+}
 
-.profileform--column{	
-	margin: 10px 10px
+.profileform--content--item{	
+	font-family: verdana;
+	font-size: 12px;
+	display: flex;
+	margin: 20px 0px;
+	flex-direction: column;
 }
 
 .profileform--header{
@@ -40,4 +50,44 @@
 	display: flex;
 	width: 180px;
 	justify-content: space-between;
+	font-family: verdana;
+	font-size: 12px;
 }
+.profileform--footer--link{
+	color: #aaaaaa;
+	text-decoration: none;
+}
+.profileform--title{
+	font-family: verdana;
+	font-size: 8px;
+}
+.profileform--input{
+	background-color: #f4f4f4;
+	height: 22px;
+	padding: 5px;
+}
+.profileform--input--color{
+	height: 30px;
+	width: 80px;
+	padding: 0px;
+	color: red;
+	
+}
+.button{
+	font-family: verdana;
+	font-size: 16px;
+	padding: 3px 10px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.button--positive{
+	color: #ffffff;
+	background-color: #2D8CEB;
+	border: 0px;
+}
+.button--negative{
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #000000;;
+}
+
