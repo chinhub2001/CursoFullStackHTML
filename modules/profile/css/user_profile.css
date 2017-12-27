@@ -11,11 +11,6 @@
 	justify-content: center;
 }
 
-.profileform-column{	
+.profileform--column{	
 	margin: 10px 10px
-}
-
-.profileform--item{
-	width: 300px;
-
 }
