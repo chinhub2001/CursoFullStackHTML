@@ -35,3 +35,9 @@
 .profileform--header--blog{
 	grid-area: blog;
 }
+
+.profileform--footer{
+	display: flex;
+	width: 180px;
+	justify-content: space-between;
+}
