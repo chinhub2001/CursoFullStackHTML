@@ -7,13 +7,14 @@
 
     <title>Mi Blog en HTML5</title>
 </head>
+
 <header>
-    <div>
+    <div class="image-blog">
         <img width="100px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
     </div>
 
 </header>
-<body>
+<body class="body-content">
 
 <nav class="navegation">
 
@@ -41,16 +42,20 @@
 
 </nav>
 
-<main>
-    <div>Top 6 artículos</div>
+<main class="main-content">
+    
+    <div class="main-content_title">Top 6 artículos</div>
 
-    <section class="contact">
+    <section class="main-content_section">
 
-        <section class="contact_image">
-            <img src="https://placem.at/people?w=600&h=200">
+        <section>
+            <div class="main-content_section_image">
+                <img src="https://placem.at/people?w=650&h=350">
+            </div>
+           
         </section>
 
-        <section class="contact_text">
+        <section class="main-content_section_text">
 
             <section>
                 <label class="blog_type" >ECOMMERCE | DIGITAL MARKETING</label>
@@ -71,14 +76,19 @@
         </section>
 
     </section>
-</main>
-<footer>
+
+    <footer>
     <nav>
         <div>Inicio</div>
         <div>Ayuda</div>
         <div>Contacto</div>
     </nav>
 </footer>
+
+</main>
+
+
+
 </body>
 
 </html>
