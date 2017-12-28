@@ -33,6 +33,10 @@ body{
 	grid-template-areas: "logo logo logo"
                        "index profile blog";
 }
+.profileform--header--child{
+	padding: 10px;
+	border: 1px solid #000000;
+}
 .profileform--header--icon{
 	grid-area: logo;
 }
@@ -52,10 +56,6 @@ body{
 	justify-content: space-between;
 	font-family: verdana;
 	font-size: 12px;
-}
-.profileform--footer--link{
-	color: #aaaaaa;
-	text-decoration: none;
 }
 .profileform--title{
 	font-family: verdana;
@@ -89,5 +89,9 @@ body{
 	color: #000000;
 	background-color: #ffffff;
 	border: 1px solid #000000;;
+}
+.link{
+	color: #aaaaaa;
+	text-decoration: none;
 }
 
