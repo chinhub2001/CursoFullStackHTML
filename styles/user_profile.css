@@ -21,6 +21,11 @@ body{
 						   "index"
 						   "profile"
 						   "blog";
+						   
+		 transition-duration: 2s;
+		 transition-property: width;
+		 transition-delay: 0s;
+		 transition-timing-function: ease-in;
 	}
 }
 .profileform--header--child{
@@ -104,6 +109,14 @@ body{
 		font-size: 16px;
 	}
  }
+ @keyframes widthchange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 98%;
+  }
+}
 .profileform--input{
 	background-color: #f4f4f4;
 	height: 22px;
@@ -113,6 +126,8 @@ body{
  and (max-device-width: 600px) {
 	 .profileform--input{
 		 font-size: 20px;
+		 animation-duration: 3s;
+		animation-name: widthchange;
 	 }
  }
 .profileform--input--color{
@@ -120,7 +135,7 @@ body{
 	width: 80px;
 	padding: 0px;
 	color: red;
-	
+	animation-name: none;
 }
 .profileform--input:valid{
 	background: #9FFFC2 url(../images/success.png) no-repeat 98% center;
@@ -134,7 +149,10 @@ body{
 	padding: 3px 10px;
 	margin: 5px;
 	border-radius: 3px;
+	animation:spin 1s linear;
 }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .button--positive{
 	color: #ffffff;
 	background-color: #2D8CEB;
