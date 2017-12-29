@@ -6,32 +6,22 @@ body{
 	flex-direction: column;
 	margin: auto 100px;
 }
-.profileform--content{
-	display: flex;
-	border: 1px solid #999;
-	width: 1000px;
-	background-color: #ffffff;
-	margin: 40px auto;
-	justify-content: center;
-}
-.profileform--content--column{
-	margin: 10px 10px;
-	width: 250px;
-}
-
-.profileform--content--item{	
-	font-family: verdana;
-	font-size: 12px;
-	display: flex;
-	margin: 20px 0px;
-	flex-direction: column;
-}
-
 .profileform--header{
 	display: grid;
 	width: 300px;
 	grid-template-areas: "logo logo logo"
-                       "index profile blog";
+					   "index profile blog";
+}
+@media only screen
+ and (max-device-width: 600px) {
+	.profileform--header{
+		display: grid;
+		width: 100%;
+		grid-template-areas: "logo"
+						   "index"
+						   "profile"
+						   "blog";
+	}
 }
 .profileform--header--child{
 	padding: 10px;
@@ -49,7 +39,54 @@ body{
 .profileform--header--blog{
 	grid-area: blog;
 }
-
+.profileform-form{
+	border: 1px solid #999;
+	width: 1000px;
+	background-color: #ffffff;
+	margin: 40px auto;
+}
+@media only screen
+ and (max-device-width: 600px) {
+	 .profileform-form{
+		width: 100%;
+		padding: 15px;
+	 }
+ }
+.profileform--content{
+	display: flex;
+	justify-content: center;
+}
+@media only screen
+ and (max-device-width: 600px) {
+	.profileform--content{
+		display: flex;
+		flex-direction: column;
+	}
+ }
+.profileform--content--column{
+	margin: 10px 10px;
+	width: 250px;
+}
+@media only screen
+ and (max-device-width: 600px) {
+	.profileform--content--column{
+		margin: 10px 0px;
+		width: 100%;
+	}
+ }
+.profileform--content--item{	
+	font-family: verdana;
+	font-size: 12px;
+	display: flex;
+	margin: 20px 0px;
+	flex-direction: column;
+}
+@media only screen
+ and (max-device-width: 600px) {
+	 .profileform--content--item{	
+		font-size: 24px;
+	}
+ }
 .profileform--footer{
 	display: flex;
 	width: 180px;
@@ -61,11 +98,23 @@ body{
 	font-family: verdana;
 	font-size: 8px;
 }
+@media only screen
+ and (max-device-width: 600px) {
+	 .profileform--title{
+		font-size: 16px;
+	}
+ }
 .profileform--input{
 	background-color: #f4f4f4;
 	height: 22px;
 	padding: 5px;
 }
+@media only screen
+ and (max-device-width: 600px) {
+	 .profileform--input{
+		 font-size: 20px;
+	 }
+ }
 .profileform--input--color{
 	height: 30px;
 	width: 80px;
