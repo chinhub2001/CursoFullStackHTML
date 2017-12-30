@@ -1,49 +1,4 @@
-html{
-
-}
-
-header{
-  width: 86%;
-  display: flex;
-  height: 100px;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0px 100px 0px 100px;
-}
-
-nav{
-  width: 93%;
-  display: flex;
-  height: 40px;
-  border-top: 1px solid #eae1e1;
-  border-bottom: 1px solid #eae1e1;
-  padding-left: 100px;
-}
-
-nav a {
-  text-decoration: none;
-  height: 40px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  color: #000000;
-}
-
-nav .content-nav{
-  width: 100px;
-  height: 40px;
-  border-right:1px solid #eae1e1 ;
-}
-
-nav .content-nav:nth-child(1){
-  border-left: 1px solid #eae1e1 ;
-}
-
-main{
-  padding: 0px 100px 0px 100px;
-}
-
-.best-articles{
+.blog-best-articles{
   height: 50px;
   width: 100%;
   float: left;
@@ -52,7 +7,7 @@ main{
   align-items: center;
 }
 
-.content-articles{
+.blog-content-articles{
   float: left;
   display: grid;
   grid-gap: 9%;
