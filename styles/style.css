@@ -37,8 +37,16 @@ header{
     padding: 0px 10px 0px 10px;
 }
 
+.menu-options .menu-options__click.active{
+    background:#d6d6d6;
+}
+
+.menu-options .menu-options__click.active a{
+    color: #ffffff;
+}
+
 .menu-options .menu-options__click:hover{
-    background:#7E7E7E;
+    background:#d6d6d6;
 }
 
 .menu-options .menu-options__click:nth-child(1){
@@ -91,4 +99,112 @@ main{
     display: flex;
     justify-content: center;
     color: #000000;
+}
+
+@media only screen
+and (max-device-width: 600px) {
+    header{
+       width: 93%;
+       padding: 0px 20px 0px 20px;
+       border-bottom: 1px solid #eae1e1;
+    }
+    .menu-options{
+        margin-top: 20px;
+        width: 93%;
+        display: block;
+        height: 100%;
+        padding: 0px 20px 0px 20px;
+        border: none;
+    }
+
+    .menu-options .menu-options__click{
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+        border-top: 1px solid #eae1e1;
+        border-left:  1px solid #eae1e1;
+
+    }
+    .menu-options .menu-options__click:last-child{
+        border-bottom:  1px solid #eae1e1;
+    }
+
+    .footer-end{
+        display: block;
+        padding: 0px 20px 0px 20px;
+        height: auto;
+        border-top: none;
+        width: 95%;
+    }
+
+    .menu-options-footer{
+        float: left;
+        width: 100%;
+        border: 1px solid #eae1e1;
+    }
+
+    .menu-options-footer__click{
+            border: none;
+        float: left;
+        width: 100%;
+    }
+
+    main{
+        padding: 0px 20px 0px 20px;
+    }
+
+}
+
+@media only screen
+and (max-width: 600px) {
+    header{
+        width: 93%;
+        padding: 0px 20px 0px 20px;
+        border-bottom: 1px solid #eae1e1;
+    }
+    .menu-options{
+        margin-top: 20px;
+        width: 88%;
+        display: block;
+        height: 100%;
+        padding: 0px 20px 0px 20px;
+        border: none;
+    }
+
+    .menu-options .menu-options__click{
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+        border-top: 1px solid #eae1e1;
+        border-left:  1px solid #eae1e1;
+
+    }
+    .menu-options .menu-options__click:last-child{
+        border-bottom:  1px solid #eae1e1;
+    }
+
+    .footer-end{
+        display: block;
+        padding: 0px 20px 0px 20px;
+        height: auto;
+        border-top: none;
+        width: 95%;
+    }
+
+    .menu-options-footer{
+        float: left;
+        width: 98%;
+        border: 1px solid #eae1e1;
+    }
+
+    .menu-options-footer__click{
+        border: none;
+        float: left;
+        width: 100%;
+    }
+
+    main{
+        padding: 0px 20px 0px 20px;
+    }
+
 }
