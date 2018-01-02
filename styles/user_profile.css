@@ -6,44 +6,6 @@ body{
 	flex-direction: column;
 	margin: auto 100px;
 }
-.profileform--header{
-	display: grid;
-	width: 300px;
-	grid-template-areas: "logo logo logo"
-					   "index profile blog";
-}
-@media only screen
- and (max-device-width: 600px) {
-	.profileform--header{
-		display: grid;
-		width: 100%;
-		grid-template-areas: "logo"
-						   "index"
-						   "profile"
-						   "blog";
-						   
-		 transition-duration: 2s;
-		 transition-property: width;
-		 transition-delay: 0s;
-		 transition-timing-function: ease-in;
-	}
-}
-.profileform--header--child{
-	padding: 10px;
-	border: 1px solid #000000;
-}
-.profileform--header--icon{
-	grid-area: logo;
-}
-.profileform--header--index{
-	grid-area: index;
-}
-.profileform--header--profile{
-	grid-area: profile;
-}
-.profileform--header--blog{
-	grid-area: blog;
-}
 .profileform-form{
 	border: 1px solid #999;
 	width: 1000px;
