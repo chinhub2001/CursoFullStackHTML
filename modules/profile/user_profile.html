@@ -4,6 +4,7 @@
 	<title>Mi Blog en HTML5</title>
 	<link rel="stylesheet" href="../../styles/user_profile.css">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+	<script src="../../js/user_profile.js"></script>
 </head>
 <body>
 	<header>
@@ -51,6 +52,16 @@
 					<div class="profileform--content--item">
 						Color favorito
 						<input  type="color" class="profileform--input profileform--input--color" value="#ff0000">	
+					</div>
+					
+					<div class="profileform--content--item">
+						Imagen
+						<input type="file" name="photo" accept="image/*" onChange="drawSelectedImage(this)" capture>
+					</div>
+					
+					<div class="profileform--content--item">
+						<canvas id="imageCanvas" width="200" height="200" class="imageCanvas">
+						</canvas>
 					</div>
 					
 				</div>	
