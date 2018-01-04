@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Blog en HTML5</title>
+</head>
+<body>
+<header>
+	<div>
+		<img width="100px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
+	</div>
+</header>
+<nav>
+	<div>
+		<a href="./../index.html">INICIO</a>
+	</div>
+	<div>
+		<a href="./../profile/user_profile.html">PERFIL</a>
+	</div>
+	<div>
+		<a href="./../blog/blog.html"> BLOG</a>
+	</div>
+</nav>
+<body>
+	<h1>Mi perfil</h1>
+	<form>
+		<table>
+			<tr>
+				<td>
+					<p>Nombre</p>
+					<input type="text" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
+				</td>
+				<td>
+					<p>Apellidos</p>
+					<input type="text" minlength="10" maxlength="150" required inputmode="latin-name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Teléfono</p>
+					<input  type="tel" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
+				</td>
+				<td>
+					<p>Email</p>
+					<input type="email" placeholder="ejemplo@usuario.es" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Fecha de nacimiento</p>
+					<input  type="date" max="2018-01-01" min="1900-01-01">
+				</td>
+				<td>
+					<p>Altura</p>
+					<input type="number" min="1" max="3">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Color favorito</p>
+					<input  type="color">
+				</td>
+				<td>
+					<p>Web favorita</p>
+					<input type="url" placeholder="http://...">
+				</td>
+			</tr>			
+		</table>
+		<br><br>
+		<input type="submit" class="positivebutton" value="Save"/><input type="reset" class="negativebutton" value="Cancel"/>
+	</form>
+	
+	<br><br>
+	<hr>
+	<footer>
+		<a href="#">Inicio</a> |
+		<a href="#">Ayuda</a> |
+		<a href="#">Contacto</a> 
+	</footer>
+</body>
