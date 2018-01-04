@@ -36,22 +36,22 @@
 					
 					<div class="profileform--content--item">
 						Nombre
-						<input type="text" class="profileform--input" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
+						<input id="name" type="text" class="profileform--input" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
 					</div>
 				
 					<div class="profileform--content--item">
 						Teléfono
-						<input  type="tel" class="profileform--input" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
+						<input id="phone" type="tel" class="profileform--input" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
 					</div>
 					
 					<div class="profileform--content--item">
 						Fecha de nacimiento
-						<input  type="date" class="profileform--input" max="2018-01-01" min="1900-01-01">
+						<input id="birthdate" type="date" class="profileform--input" max="2018-01-01" min="1900-01-01">
 					</div>
 					
 					<div class="profileform--content--item">
 						Color favorito
-						<input  type="color" class="profileform--input profileform--input--color" value="#ff0000">	
+						<input id="color" type="color" class="profileform--input profileform--input--color" value="#ff0000">	
 					</div>
 					
 					<div class="profileform--content--item">
@@ -69,26 +69,26 @@
 						
 					<div class="profileform--content--item">
 						Apellidos
-						<input type="text" class="profileform--input" minlength="10" maxlength="150" required inputmode="latin-name">
+						<input id="surname" type="text" class="profileform--input" minlength="10" maxlength="150" required inputmode="latin-name">
 					</div>
 					<div class="profileform--content--item">
 						Email
-						<input type="email" class="profileform--input" placeholder="ejemplo@usuario.es" required>
+						<input id="email" type="email" class="profileform--input" placeholder="ejemplo@usuario.es" required>
 					</div>
 					<div class="profileform--content--item">
 						Altura
-						<input type="number" class="profileform--input" min="1" max="3">
+						<input id="userheight" type="number" class="profileform--input" min="1" max="3">
 					</div>
 					<div class="profileform--content--item">
 						Web favorita
-						<input type="url" class="profileform--input" placeholder="http://...">
+						<input id="url" type="url" class="profileform--input" placeholder="http://...">
 					</div>
 				</div>
 			</div>	
 			<div class="profileform--content">
 				<div class="profileform--content--column">
 					<br><br>
-					<input type="submit" class="button button--positive" value="Save"/><input type="reset" class="button button--negative" value="Cancel"/>
+					<input type="submit" class="button button--positive" value="Save" onclick="saveFormDataInLocalStorage()"/><input type="reset" class="button button--negative" value="Cancel"/>
 				</div>
 				<div class="profileform--content--column"></div>
 			</div>	
