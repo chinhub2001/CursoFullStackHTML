@@ -1,65 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/blog.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <title>Mi Blog en HTML5</title>
 </head>
+<body>
+
 <header>
     <div>
-        <img width="100px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
+        <img alt="Logo Indra" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
     </div>
-
 </header>
-<body>
-<nav>
-    <div>
+
+<nav class="menu-options">
+    <div class="menu-options__click active">
         <a href="index.html">INICIO</a>
     </div>
-    <div>
-        <a href="./profile/user_profile.html">PERFIL</a>
+    <div class="menu-options__click">
+        <a href="profile/user_profile.html">PERFIL</a>
     </div>
-    <div>
-        <a href="./blog/blog.html"> BLOG</a>
+    <div class="menu-options__click">
+        <a href="posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
     </div>
 </nav>
 <main>
-    <div>Top 6 artículos</div>
+    <div class="blog-best-articles">Top 6 Artículos</div>
+    <div class="blog-best-articles-separator"></div>
+    <div class="blog-content-articles">
+        <article >
+            <img alt="Imagen Web Components" src="https://bbvaopen4u.com/sites/default/files/img/embed/article/bbva-open4u-webcomponents.jpg">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Web Components | Angular | WEB</div>
+                <time class="blog-label-date-author" datetime="2015-01-15">15 de Enero de 2015 / Carlos Azauste ></time>
+            </div>
+            <div class="blog-label-title-post">'Web components': presente y futuro en el desarrollo web</div>
+            <div class="blog-label-description-post">Los web components son el estándar que va a definir la web del futuro y que ya estamos contemplando en aplicaciones y plataformas hoy en día, tanto para Desktop como Mobile. En este artículo te explicamos como surgió este estándar, que tecnología implementan los web components, cómo utilizarlos y qué papel van a jugar en el ecosistema de la web.</div>
+        </article>
 
-    <section class="contact">
+        <article >
+            <img alt="Imágen Angular" src="https://www.deustoformacion.com/sites/deustoformacion/files/styles/imagen_post_grande/public/posts/desarrollo_de_paginas_web_2.jpg?itok=9VcqiEus">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Angular  | Programación</div>
+                <time class="blog-label-date-author" datetime="2017-07-20">20 de Julio de 2017 / Albert Miró</time>
+            </div>
+            <div class="blog-label-title-post">¿Por qué usar AngularJS en el desarrollo de una web?</div>
+            <div class="blog-label-description-post">Ya hemos hablado de varios Frameworks a la hora de diseñar y construir una página web para tener nuestra presencia online, ya sea para tener un portafolio, un blog personal o una página presentación de nuestra empresa. Pero aún no hemos abarcado un tema concreto: la creación de aplicaciones. Pero no me refiero el tipo de apps que nos descargamos ...</div>
+        </article>
 
-        <section class="contact_image">
-            <img src="https://placem.at/people?w=600&h=200">
-        </section>
+        <article >
+            <img alt="Imagen Javascript" src="https://bbvaopen4u.com/sites/default/files/img/new/bbva-open4u-javascript.jpg">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Front-end | Javascript | Apps</div>
+                <time class="blog-label-date-author" datetime="2017-12-29">29 de Diciembre de 2017 / Creado por Lucas</time>
+            </div>
+            <div class="blog-label-title-post">JavaScript, rey del desarrollo moderno en 'front-end' y 'back-end'</div>
+            <div class="blog-label-description-post">Un desarrollador que sepa JavaScript puede programar una aplicación web desde cero y hasta el final solo con sus conocimientos en esta sintaxis. Es el mito del desarrollador full-stack hecho realidad.</div>
+        </article>
 
-        <section class="contact_text">
+        <article >
+            <img alt="Imágen Desarrollo de Apis" src="https://bbvaopen4u.com/sites/default/files/img/new/bbva-open4u-api.png">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Apis | Desarrollo | Apps</div>
+                <time class="blog-label-date-author" datetime="2017-12-28">28 de Diciembre de 2017 / Anónimo</time>
+            </div>
+            <div class="blog-label-title-post">8 beneficios por los que los desarrolladores apuestan por APIs</div>
+            <div class="blog-label-description-post">Las APIs están revolucionando los modelos de negocio de las compañías, pero también la forma de trabajar de los desarrolladores. Esta tecnología agiliza y simplifica su trabajo a la vez que le aporta flexibilidad y nuevas perspectivas.  </div>
+        </article>
 
-            <section>
-                <label class="blog_type" >ECOMMERCE | DIGITAL MARKETING</label>
-            </section>
 
-            <section >
-                <label class="blog_date" >on June 29, 2016 / by Florian Gendrault</label>
-            </section>
+        <article>
+            <img alt="Imágen Desarrollo de Frameworks" src="https://bbvaopen4u.com/sites/default/files/img/new/bbva-open4u-frameworks-web-futuro_cover.png">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Desarrollo | Web </div>
+                <time class="blog-label-date-author" datetime="2017-12-28">28 de Diciembre de 2017 / Creado por Lucas</time>
+            </div>
+            <div class="blog-label-title-post">Los frameworks imprescindibles para desarrollar la web del futuro</div>
+            <div class="blog-label-description-post">La web ha evolucionado a un ritmo desenfrenado, es fácil perderse entre la cantidad de nuevos frameworks y componentes. Hacemos un recorrido por las opciones que tenemos y hacia dónde se dirige la web: Polymer, Angular, Reactive.</div>
+        </article>
 
-            <section >
-                <label class="blog_title" >Omnichannel Shopping: Optimizing Ecommerce App</label>
-            </section>
 
-            <article class="article">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            </article>
-
-        </section>
-
-    </section>
+        <article>
+            <img alt="Imágen Javascript" src="https://bbvaopen4u.com/sites/default/files/img/new/bbva-open4u-herramientas-programacion-javascript.png">
+            <div class="blog-content-data-info">
+                <div class="blog-label-names">Javascript | Web | Front-end</div>
+                <time class="blog-label-date-author" datetime="2017-12-28">28 de Diciembre de 2017 / Creado por Lucas</time>
+            </div>
+            <div class="blog-label-title-post">Herramientas básicas para desarrolladores en JavaScript</div>
+            <div class="blog-label-description-post">JavaScript es un lenguaje indispensable en el desarrollo de proyectos web y aplicaciones. Su uso se ha extendido a toda la pila del desarrollo. Este es un listado de frameworks y librerías JavaScript para desarrolladores.</div>
+        </article>
+    </div>
 </main>
-<footer>
-    <nav>
-        <div>Inicio</div>
-        <div>Ayuda</div>
-        <div>Contacto</div>
+<footer class="footer-end">
+    <nav class="menu-options-footer">
+        <div class="menu-options-footer__click">
+            <a href="./index.html">Inicio</a>
+        </div>
+        <div class="menu-options-footer__click">
+            <a href="">Ayuda</a>
+        </div>
+        <div class="menu-options-footer__click">
+            <a href="">Contacto</a>
+        </div>
     </nav>
 </footer>
 </body>
-
 </html>
