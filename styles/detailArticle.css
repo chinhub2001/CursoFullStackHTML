@@ -137,7 +137,7 @@
 }
 
 .main-content_section_image:hover{
-	width: 800px;
+	opacity: 0.5;
 }
 
 @media only screen
