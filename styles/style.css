@@ -41,6 +41,15 @@ header img{
     padding: 0px 10px 0px 10px;
 }
 
+.menu-options .circulo-verde{
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
 .menu-options .menu-options__click.active{
     background:#d6d6d6;
 }
