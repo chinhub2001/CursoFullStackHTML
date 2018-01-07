@@ -16,13 +16,17 @@ header img{
     height: 50px;
 }
 
+nav{
+    display: flex;
+}
+
 .menu-options{
     width: 93%;
     display: flex;
     height: 40px;
     border-top: 1px solid #eae1e1;
     border-bottom: 1px solid #eae1e1;
-    padding-left: 100px;
+    padding-left: 7%;
 }
 
 .menu-options a{
@@ -41,13 +45,33 @@ header img{
     padding: 0px 10px 0px 10px;
 }
 
-.menu-options .circulo-verde{
+.status{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eae1e1;
+    border-bottom: 1px solid #eae1e1;
+    margin-right: 10px;
+}
+.status-name{
+    margin-right: 10px;
+}
+
+.status .circulo{
+
     width: 10px;
     height: 10px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    margin-right: 25px;
+}
+
+.status .circulo.circulo-verde{
     background: #5cb85c;
+}
+
+.status .circulo.circulo-rojo{
+    background: #ff0000;
 }
 
 .menu-options .menu-options__click.active{
@@ -114,6 +138,8 @@ main{
     color: #bcb7b7;
 }
 
+
+
 @media only screen
 and (max-device-width: 600px) {
     header{
@@ -121,13 +147,23 @@ and (max-device-width: 600px) {
        padding: 0px 20px 0px 20px;
        border-bottom: 1px solid #eae1e1;
     }
+
+    .status{
+        display: none;
+        align-items: center;
+        border-top: 1px solid #eae1e1;
+        border-bottom: 1px solid #eae1e1;
+        margin-right: 10px;
+    }
+
     .menu-options{
         margin-top: 20px;
-        width: 93%;
+        width: 88%;
         display: block;
         height: 100%;
-        padding: 0px 20px 0px 20px;
+        padding: 0% 4% 0% 5%;
         border: none;
+        margin-right: 7%;
     }
 
     .menu-options .menu-options__click{
@@ -175,13 +211,23 @@ and (max-width: 600px) {
         padding: 0px 20px 0px 20px;
         border-bottom: 1px solid #eae1e1;
     }
+
+    .status{
+        display: none;
+        align-items: center;
+        border-top: 1px solid #eae1e1;
+        border-bottom: 1px solid #eae1e1;
+        margin-right: 10px;
+    }
+
     .menu-options{
         margin-top: 20px;
         width: 88%;
         display: block;
         height: 100%;
-        padding: 0px 20px 0px 20px;
+        padding: 0% 4% 0% 5%;
         border: none;
+        margin-right: 7%;
     }
 
     .menu-options .menu-options__click{
