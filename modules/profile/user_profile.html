@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="../../styles/user_profile.css">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
 	<script src="../../js/user_profile.js"></script>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script src="../../js/connection.js"> </script>
 </head>
 <body>
 	<header>
@@ -13,18 +15,26 @@
 		</div>
 	</header>
 	
-	<nav class="menu-options">
-		<div class="menu-options__click">
-			<a href="../index.html">INICIO</a>
+	<nav>
+
+		<div class="menu-options">
+			<div class="menu-options__click">
+				<a href="../index.html">INICIO</a>
+			</div>
+			<div class="menu-options__click active">
+				<a href="../profile/user_profile.html">PERFIL</a>
+			</div>
+			<div class="menu-options__click">
+				<a href="../posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+			</div>
+			<div class="menu-options__click ">
+				<a href="../location/location.html"> ¿DONDE ESTAMOS?</a>
+			</div>
 		</div>
-		<div class="menu-options__click active">
-			<a href="../profile/user_profile.html">PERFIL</a>
-		</div>
-		<div class="menu-options__click">
-			<a href="../posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
-		</div>
-		<div class="menu-options__click ">
-			<a href="../location/location.html"> ¿DONDE ESTAMOS?</a>
+
+		<div class="status">
+			<div class="status-name">Conectado</div>
+			<div class="circulo"></div>
 		</div>
 	</nav>
 
