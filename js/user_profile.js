@@ -9,6 +9,7 @@ function drawSelectedImage(e) {
 }
 window.onload = function() {
 	if (typeof(Storage) !== "undefined") {
+		console.log("localStorage SÍ es soportado por este navegador :D")
 		var formData = localStorage.getItem("formData");
 		
 		if(formData == null){
