@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../styles/blog.css">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1 minimum-scale=1; user-scalable=no"/>
     <title>Mi Blog en HTML5</title>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/connection.js"> </script>
 </head>
 <body>
 
@@ -14,15 +17,25 @@
     </div>
 </header>
 
-<nav class="menu-options">
-    <div class="menu-options__click active">
-        <a href="index.html">INICIO</a>
+<nav>
+    <div class="menu-options">
+        <div class="menu-options__click active">
+            <a href="index.html">INICIO</a>
+        </div>
+        <div class="menu-options__click">
+            <a href="profile/user_profile.html">PERFIL</a>
+        </div>
+        <div class="menu-options__click">
+            <a href="posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+        </div>
+        <div class="menu-options__click">
+            <a href="./location/location.html"> ¿DONDE ESTAMOS?</a>
+        </div>
     </div>
-    <div class="menu-options__click">
-        <a href="profile/user_profile.html">PERFIL</a>
-    </div>
-    <div class="menu-options__click">
-        <a href="posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+
+    <div class="status">
+        <div class="status-name">Conectado</div>
+        <div class="circulo"></div>
     </div>
 </nav>
 <main>
