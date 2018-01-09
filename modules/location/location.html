@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./../../styles/blog.css">
+    <link rel="stylesheet" type="text/css" href="./../../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./../../styles/location.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1 minimum-scale=1; user-scalable=no"/>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/location.js"></script>
+    <script src="../../js/connection.js"> </script>
+    <title>Mi Blog en HTML5</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <img alt="Logo Indra" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Indra-Sistemas-Logo.svg/2000px-Indra-Sistemas-Logo.svg.png">
+    </div>
+</header>
+
+<nav>
+    <div class="menu-options">
+        <div class="menu-options__click ">
+            <a href="../index.html">INICIO</a>
+        </div>
+        <div class="menu-options__click">
+            <a href="../profile/user_profile.html">PERFIL</a>
+        </div>
+        <div class="menu-options__click">
+            <a href="../posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+        </div>
+        <div class="menu-options__click active">
+            <a href="../location/location.html"> ¿DONDE ESTAMOS?</a>
+        </div>
+    </div>
+
+
+    <div class="status">
+       <div class="status-name">Conectado</div>
+       <div class="circulo"></div>
+    </div>
+
+</nav>
+<main>
+    <div id="map"></div>
+    <div class="location-info-map"></div>
+</main>
+<footer class="footer-end">
+    <nav class="menu-options-footer">
+        <div class="menu-options-footer__click">
+            <a href="./index.html">Inicio</a>
+        </div>
+        <div class="menu-options-footer__click">
+            <a href="">Ayuda</a>
+        </div>
+        <div class="menu-options-footer__click">
+            <a href="">Contacto</a>
+        </div>
+    </nav>
+</footer>
+</body>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqbuMrfOdwSHTT3UI01nHwiXQLUSswdsc&callback=getActualPosition">
+</script>
+
+</html>

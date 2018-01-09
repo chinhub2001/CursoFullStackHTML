@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1 minimum-scale=1; user-scalable=no"/>
 	<title>Mi Blog en HTML5</title>
 	<link rel="stylesheet" href="../../styles/user_profile.css">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+	<script src="../../js/user_profile.js"></script>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script src="../../js/connection.js"> </script>
 </head>
 <body>
 	<header>
@@ -12,15 +16,26 @@
 		</div>
 	</header>
 	
-	<nav class="menu-options">
-		<div class="menu-options__click">
-			<a href="../index.html">INICIO</a>
+	<nav>
+
+		<div class="menu-options">
+			<div class="menu-options__click">
+				<a href="../index.html">INICIO</a>
+			</div>
+			<div class="menu-options__click active">
+				<a href="../profile/user_profile.html">PERFIL</a>
+			</div>
+			<div class="menu-options__click">
+				<a href="../posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+			</div>
+			<div class="menu-options__click ">
+				<a href="../location/location.html"> ¿DONDE ESTAMOS?</a>
+			</div>
 		</div>
-		<div class="menu-options__click active">
-			<a href="../profile/user_profile.html">PERFIL</a>
-		</div>
-		<div class="menu-options__click">
-			<a href="../posts/detailArticle.html"> DETALLE DEL ARTÍCULO</a>
+
+		<div class="status">
+			<div class="status-name">Conectado</div>
+			<div class="circulo"></div>
 		</div>
 	</nav>
 
@@ -35,22 +50,32 @@
 					
 					<div class="profileform--content--item">
 						Nombre
-						<input type="text" class="profileform--input" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
+						<input id="name" type="text" class="profileform--input" minlength="10" maxlength="150" required autofocus inputmode="latin-name">
 					</div>
 				
 					<div class="profileform--content--item">
 						Teléfono
-						<input  type="tel" class="profileform--input" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
+						<input id="phone" type="tel" class="profileform--input" pattern="[6|7|9][0-9]{8}" placeholder="Ej:923121212"> <!--como el tipo tel no se valida en todos los navegadores, meto un pattern-->
 					</div>
 					
 					<div class="profileform--content--item">
 						Fecha de nacimiento
-						<input  type="date" class="profileform--input" max="2018-01-01" min="1900-01-01">
+						<input id="birthdate" type="date" class="profileform--input" max="2018-01-01" min="1900-01-01">
 					</div>
 					
 					<div class="profileform--content--item">
 						Color favorito
-						<input  type="color" class="profileform--input profileform--input--color" value="#ff0000">	
+						<input id="color" type="color" class="profileform--input profileform--input--color" value="#ff0000">	
+					</div>
+					
+					<div class="profileform--content--item">
+						Imagen
+						<input type="file" name="photo" accept="image/*" onChange="drawSelectedImage(this)" capture>
+					</div>
+					
+					<div class="profileform--content--item">
+						<canvas id="imageCanvas" width="200" height="200" class="imageCanvas">
+						</canvas>
 					</div>
 					
 				</div>	
@@ -58,26 +83,26 @@
 						
 					<div class="profileform--content--item">
 						Apellidos
-						<input type="text" class="profileform--input" minlength="10" maxlength="150" required inputmode="latin-name">
+						<input id="surname" type="text" class="profileform--input" minlength="10" maxlength="150" required inputmode="latin-name">
 					</div>
 					<div class="profileform--content--item">
 						Email
-						<input type="email" class="profileform--input" placeholder="ejemplo@usuario.es" required>
+						<input id="email" type="email" class="profileform--input" placeholder="ejemplo@usuario.es" required>
 					</div>
 					<div class="profileform--content--item">
 						Altura
-						<input type="number" class="profileform--input" min="1" max="3">
+						<input id="userheight" type="number" class="profileform--input" min="1" max="3">
 					</div>
 					<div class="profileform--content--item">
 						Web favorita
-						<input type="url" class="profileform--input" placeholder="http://...">
+						<input id="url" type="url" class="profileform--input" placeholder="http://...">
 					</div>
 				</div>
 			</div>	
 			<div class="profileform--content">
 				<div class="profileform--content--column">
 					<br><br>
-					<input type="submit" class="button button--positive" value="Save"/><input type="reset" class="button button--negative" value="Cancel"/>
+					<input type="submit" class="button button--positive" value="Save" onclick="saveFormDataInLocalStorage()"/><input type="reset" class="button button--negative" value="Cancel"/>
 				</div>
 				<div class="profileform--content--column"></div>
 			</div>	
