@@ -4,13 +4,13 @@ body{
 .profileform{
 	display: flex;
 	flex-direction: column;
-	margin: auto 100px;
+	width: 95%;
+	margin: 0px 20px 0px 20px;
 }
 .profileform-form{
 	border: 1px solid #eae1e1;
 	width: 100%;
 	background-color: #ffffff;
-	margin: 40px auto;
 }
 @media only screen
  and (max-device-width: 600px) {
@@ -91,6 +91,13 @@ body{
 		 animation-duration: 3s;
 		animation-name: widthchange;
 	 }
+
+	.profileform{
+		display: flex;
+		flex-direction: column;
+		width: 81%;
+		margin: 0px 20px 0px 20px;
+	}
  }
 .profileform--input--color{
 	height: 30px;
@@ -133,4 +140,4 @@ body{
 	border:1px solid #000000;
 	margin: 20px;
 }
-}
+

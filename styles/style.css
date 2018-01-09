@@ -149,11 +149,15 @@ and (max-device-width: 600px) {
     }
 
     .status{
-        display: none;
+        display: flex;
         align-items: center;
-        border-top: 1px solid #eae1e1;
         border-bottom: 1px solid #eae1e1;
         margin-right: 10px;
+        width: 100%;
+        position: absolute;
+        align-content: flex-end;
+        justify-content: flex-end;
+        height: 20px;
     }
 
     .menu-options{
@@ -161,7 +165,7 @@ and (max-device-width: 600px) {
         width: 88%;
         display: block;
         height: 100%;
-        padding: 0% 4% 0% 5%;
+        padding: 4% 4% 0% 5%;
         border: none;
         margin-right: 7%;
     }
@@ -184,6 +188,7 @@ and (max-device-width: 600px) {
         height: auto;
         border-top: none;
         width: 95%;
+        margin: 0px 0px 20px 0px;
     }
 
     .menu-options-footer{
@@ -193,9 +198,10 @@ and (max-device-width: 600px) {
     }
 
     .menu-options-footer__click{
-            border: none;
+        border: none;
         float: left;
         width: 100%;
+        border-bottom: 1px solid #eae1e1;
     }
 
     main{
@@ -213,11 +219,15 @@ and (max-width: 600px) {
     }
 
     .status{
-        display: none;
+        display: flex;
         align-items: center;
-        border-top: 1px solid #eae1e1;
         border-bottom: 1px solid #eae1e1;
         margin-right: 10px;
+        width: 100%;
+        position: absolute;
+        align-content: flex-end;
+        justify-content: flex-end;
+        height: 20px;
     }
 
     .menu-options{
@@ -225,9 +235,10 @@ and (max-width: 600px) {
         width: 88%;
         display: block;
         height: 100%;
-        padding: 0% 4% 0% 5%;
+        padding: 4% 4% 0% 5%;
         border: none;
         margin-right: 7%;
+
     }
 
     .menu-options .menu-options__click{
@@ -248,18 +259,22 @@ and (max-width: 600px) {
         height: auto;
         border-top: none;
         width: 95%;
+        margin: 0px 0px 20px 0px;
     }
 
     .menu-options-footer{
         float: left;
         width: 98%;
         border: 1px solid #eae1e1;
+        display: block;
     }
 
     .menu-options-footer__click{
         border: none;
         float: left;
         width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #eae1e1;
     }
 
     main{
